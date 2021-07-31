@@ -1,0 +1,7 @@
+pages\AmazonHomePage.class
+pages\AmazonProductsDetailsPage.class
+utils\Utils.class
+stepDefinitions\StepDefinitions.class
+pages\AmazonSearchResultsPage.class
+runner\RunCucumberITest.class
+utils\Asserter.class

@@ -1,0 +1,130 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-31T19:00:09.212Z",
+        "line": 13,
+        "name": ": Goto \"https://www.amazon.com/\" to search \"laptop\" and check the is the first product is more than 100$ from product details window",
+        "description": "",
+        "id": "sitecore-assignment;:-goto-\"\u003curl\u003e\"-to-search-\"laptop\"-and-check-the-is-the-first-product-is-more-than-100$-from-product-details-window;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2005000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Setup \"Chrome\" browser \"src/test/resources/driverFiles/chromedriver.exe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chrome\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"src/test/resources/driverFiles/chromedriver.exe\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.\u003cinit\u003e(StepDefinitions.java:26)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1570000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "GoTo URL \"https://www.amazon.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.amazon.com/\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.\u003cinit\u003e(StepDefinitions.java:31)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3458000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Search for the keyword \"laptop\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"laptop\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.\u003cinit\u003e(StepDefinitions.java:36)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3970000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Select product number : \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.\u003cinit\u003e(StepDefinitions.java:43)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Check if the price is greater than \"100\" USD",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinitions.StepDefinitions.\u003cinit\u003e(StepDefinitions.java:49)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 655000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Close the browser",
+            "match": {
+              "location": "stepDefinitions.StepDefinitions.\u003cinit\u003e(StepDefinitions.java:57)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "SiteCore Assignment",
+    "description": "",
+    "id": "sitecore-assignment",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featureFiles/amazonTest.feature",
+    "tags": []
+  }
+]
