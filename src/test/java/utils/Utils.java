@@ -15,8 +15,13 @@ public class Utils {
     private static final Logger logger = LogManager.getLogger(Utils.class);
 
     public static WebDriver setupBrowser(String browserName, String driverPath) {
-        setSystemProperty(browserName, driverPath);
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver ;
+        if (browserName.toLowerCase().contains("chrome")) {
+            setSystemProperty(browserName, driverPath);
+             driver = new ChromeDriver();
+        } else {
+            throw new RuntimeException("This test setup supports only chrome browser");
+        }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         return driver;
@@ -26,7 +31,7 @@ public class Utils {
         if (browserName.toLowerCase().contains("chrome")) {
             System.setProperty("webdriver.chrome.driver", driverPath);
         } else {
-            throw new RuntimeException("This test setup supports only chrome and firefox browser");
+            throw new RuntimeException("This test setup supports only chrome browser");
         }
 
     }
