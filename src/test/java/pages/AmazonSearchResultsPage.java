@@ -19,7 +19,7 @@ public class AmazonSearchResultsPage {
         PageFactory.initElements(driver, this);
     }
 
-    public AmazonProductsDetailsPage selectFirstProduct(String productNumber) {
+    public AmazonProductsDetailsPage selectProduct(String productNumber) {
         productLinkInSearchList = driver.findElement(By.xpath("(//a[@class=\"a-link-normal a-text-normal\"])[" + productNumber + "]"));
         waitUntilElementToBeClickable(driver, productLinkInSearchList);
         productLinkInSearchList.click();

@@ -43,19 +43,20 @@ public class StepDefinitions implements En {
         Then("Select product number : {string}", (String productNumber) -> {
             String searchResultsPage = amazonSearchResultPage.getCurrentPageTitle();
             logger.info("Amazon search results page loaded successfully, Page Title : " + searchResultsPage);
-            amazonProductsDetailsPage = amazonSearchResultPage.selectFirstProduct(productNumber);
+            amazonProductsDetailsPage = amazonSearchResultPage.selectProduct(productNumber);
         });
 
         And("Check if the price is greater than {string} USD", (String amount) -> {
             amazonProductsDetailsPage.getCurrentPageTitle();
             String actualAmount = amazonProductsDetailsPage.getActualPrice();
-            logger.info("Amount of the product : " + actualAmount);
+            logger.info("Amount of the product selected: " + actualAmount);
             assertIfAmountIsGreater(BigDecimal.valueOf(Double.parseDouble(actualAmount.replaceAll("[^0-9\\.]", ""))), BigDecimal.valueOf(Double.parseDouble(amount)));
             logger.info("Product amount " + actualAmount + " is greater than $" + amount);
         });
 
         And("Close the browser", () -> {
             quitBrowser(driver);
+            logger.info("Browser closed successfully");
         });
     }
 
