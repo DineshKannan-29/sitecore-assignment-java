@@ -44,6 +44,7 @@ public class StepDefinitions implements En {
             String searchResultsPage = amazonSearchResultPage.getCurrentPageTitle();
             logger.info("Amazon search results page loaded successfully, Page Title : " + searchResultsPage);
             amazonProductsDetailsPage = amazonSearchResultPage.selectProduct(productNumber);
+            logger.info("Selected product number "+productNumber+" from search result page successfully");
         });
 
         And("Check if the price is greater than {string} USD", (String amount) -> {

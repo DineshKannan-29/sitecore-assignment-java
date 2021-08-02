@@ -10,6 +10,6 @@ Feature: SiteCore Assignment
 
     Examples:
       | BrowserName | DriverPath                                      | URL                     | KeyWord | ProductNumber | Amount |
-      | Chrome      | src/test/resources/driverFiles/chromedriver.exe | https://www.amazon.com/ | laptop  | 50             | 100    |
+      | Chrome      | src/test/resources/driverFiles/chromedriver.exe | https://www.amazon.com/ | laptop  | 1             | 100    |
 
 
