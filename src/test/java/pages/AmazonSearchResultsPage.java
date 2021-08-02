@@ -35,6 +35,7 @@ public class AmazonSearchResultsPage {
             waitUntilElementToBeClickable(driver, productLinkInSearchList);
             productLinkInSearchList.click();
         } else {
+            driver.close();
             throw new RuntimeException("Could not find the product number : "+productNumber+" from the search list since search result contains only "+ (searchList.size()) +" products");
         }
 
