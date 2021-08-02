@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-01T08:42:07.387Z",
+        "start_timestamp": "2021-08-01T16:28:50.123Z",
         "line": 13,
         "name": ": Goto \"https://www.amazon.com/\" to search \"laptop\" and check the is the first product is more than 100$ from product details window",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1953000000,
+              "duration": 2034000000,
               "status": "passed"
             },
             "line": 4,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 1654000000,
+              "duration": 1740000000,
               "status": "passed"
             },
             "line": 5,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 2936000000,
+              "duration": 2824000000,
               "status": "passed"
             },
             "line": 6,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 2875000000,
+              "duration": 2992000000,
               "status": "passed"
             },
             "line": 7,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 156000000,
+              "duration": 144000000,
               "status": "passed"
             },
             "line": 8,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 658000000,
+              "duration": 629000000,
               "status": "passed"
             },
             "line": 9,
